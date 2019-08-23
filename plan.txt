@@ -1,0 +1,4 @@
+get input form user
+create a while loop that will not quit until 4 is presses
+userinput must match options
+if and elif statements to represent options
