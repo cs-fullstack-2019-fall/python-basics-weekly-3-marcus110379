@@ -8,7 +8,7 @@
 #What will you like to do?
 
 userInput = -1
-balance = 0
+balance = 0 # !! : this is redundant bc you define balance as 500 in the loop
 
 while userInput != 4: # while 4 is not pressed loop will continue
 
@@ -22,23 +22,23 @@ while userInput != 4: # while 4 is not pressed loop will continue
     )
 
     balance = 500
-    newBalance = balance
+    newBalance = balance # !! : this is redndant 
 
     if userInput == 1:
-        print(f"Your current account has ${balance} dollars")
+        print(f"Your current account has ${balance} dollars") # !! : balance is never updated 
     elif userInput == 2:
         deposit = int(input("How much would you like to deposit? "))
-        newBalance = (int(deposit) + int(balance))
+        newBalance = (int(deposit) + int(balance)) # !! : update the value of balance NOT new balance
         print(f"Your account now holds ${newBalance} dollars")
     elif userInput == 3:
         withdraw = int(input("How much money would you like to withdraw? "))
-        newNum = int(newBalance) - withdraw
+        newNum = int(newBalance) - withdraw 
         if withdraw > int(newBalance):
             print("Insufficient Funds")
         else:
-            print("Your account now holds " + str(newNum))
+            print("Your account now holds " + str(newNum)) # !! : update the value of balance 
 
-    userInput = int(input("enter number"))
+    userInput = int(input("enter number")) # !! : display the entire menu each time 
 
 
 

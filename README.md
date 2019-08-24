@@ -39,3 +39,6 @@ Before the program starts, ask the user for their account name and a pin number.
 
 
 # SERIOUSLY, POINTS WILL BE TAKEN OFF FOR NOT COMMENTING
+
+### Comments:
+You shuld have more planning and comments. You don't update the value of balance which means you never have a running total. This is a major oversight. Be sure to test your code before submission. You might have caught this mistake. Check out inline comments I made in your code starting with "!!". Be sure to watch the assignment walkthrough posted on slack. 
